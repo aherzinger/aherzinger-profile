@@ -1,10 +1,11 @@
 // Language Toggle Logic
 export function initLanguage() {
-    // Check for saved language preference or default to German
+    // Default is German - only switch to English if user has explicitly saved that preference
     const savedLang = localStorage.getItem('language');
     if (savedLang === 'en') {
         document.body.classList.add('english-mode');
     }
+    // If no saved preference or savedLang is 'de', German is shown by default (no class needed)
 }
 
 export function toggleLanguage() {

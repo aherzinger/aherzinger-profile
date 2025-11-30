@@ -83,3 +83,23 @@ body.theme-light .text-gray-500 { color: var(--color-text-muted); }
 body.theme-light nav { background: rgba(255,255,255,0.95); border-bottom: 1px solid #e5e7eb; }
 body.theme-light .filter-btn.active { color: white; }
 
+/* Project Badge Theme Adaptation */
+.project-badge {
+    background: rgba(27, 40, 56, 0.9);
+    color: #66FCF1;
+    border-color: rgba(102, 252, 241, 0.2);
+}
+body.theme-light .project-badge {
+    background: rgba(255, 255, 255, 0.95);
+    color: #1A202C;
+    border-color: rgba(0, 86, 145, 0.3);
+}
+
+/* GitHub Logo Theme Adaptation */
+.github-logo {
+    filter: brightness(0) invert(1);
+}
+body.theme-light .github-logo {
+    filter: brightness(0);
+}
+
