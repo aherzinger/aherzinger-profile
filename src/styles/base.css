@@ -107,3 +107,11 @@ body.theme-light .github-logo {
     filter: brightness(0);
 }
 
+
+/* Logo "Bergsee" (see docs/rebuild/HANDOFF.md): mark + wordmark, "-ai" in lake green */
+.site-logo { display: inline-flex; align-items: center; gap: 9px; font-family: "Archivo", "Inter", sans-serif; font-weight: 600; font-size: 18px; letter-spacing: -0.02em; color: #fff; white-space: nowrap; }
+.site-logo svg { width: 26px; height: 26px; display: block; }
+.site-logo .ai { color: #8fc4cb; }
+body.theme-light .site-logo { color: #000; }
+body.theme-light .site-logo .ai { color: #22525a; }
+body.theme-light .site-logo svg path:last-child { stroke: #22525a; }

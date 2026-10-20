@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=JetBrains+Mono:wght@400;700&amp;family=Archivo:wght@600&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -89,10 +89,15 @@
             class="flex-shrink-0 flex items-center space-x-2 cursor-pointer"
             onclick="window.scrollTo(0,0)"
           >
-            <span
-              class="font-mono text-xl font-bold tracking-tighter text-brand-white"
-              >herzinger-<span class="text-brand-cyan">ai</span></span
-            >
+            <!-- Logo "Bergsee": ridge + shoreline white, reflection #8fc4cb (lake green on dark) -->
+            <span class="site-logo" aria-label="herzinger-ai">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M5 25 L16 11 L23 19 L30 13 L43 25" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" />
+                <path d="M5 25 H43" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M9 29 L16 38 L23 31 L30 36 L39 29" fill="none" stroke="#8fc4cb" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" />
+              </svg>
+              <span>herzinger<span class="ai">-ai</span></span>
+            </span>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-center space-x-4">
@@ -116,6 +121,13 @@
               >
                 <span class="lang-de">Projekte</span
                 ><span class="lang-en">Work</span>
+              </a>
+              <a
+                class="hover:text-brand-cyan transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                href="#partners"
+              >
+                <span class="lang-de">Partner</span
+                ><span class="lang-en">Partners</span>
               </a>
               <!-- Theme Toggle - COMMENTED OUT -->
               <!--
@@ -202,6 +214,13 @@
           >
             <span class="lang-de">Projekte</span
             ><span class="lang-en">Work</span>
+          </a>
+          <a
+            class="text-brand-white block px-3 py-2 rounded-md text-base font-medium"
+            href="#partners"
+          >
+            <span class="lang-de">Partner</span
+            ><span class="lang-en">Partners</span>
           </a>
           <a
             class="text-brand-cyan font-bold block px-3 py-2 rounded-md text-base font-medium"
@@ -645,6 +664,575 @@
       </div>
     </section>
 
+    <!-- Partners Section -->
+    <section class="py-24 relative z-10 animate-fade-in-up" id="partners">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-brand-white">
+            <span class="lang-de"
+              >Meine <span class="text-brand-cyan">Partner</span></span
+            >
+            <span class="lang-en"
+              >My <span class="text-brand-cyan">Partners</span></span
+            >
+          </h2>
+          <div class="h-1 w-20 bg-brand-cyan mx-auto rounded-full mb-4"></div>
+          <p class="text-brand-muted">
+            <span class="lang-de"
+              >Zwei langfristige Freelance-Mandate neben meinen
+              Projektaufträgen.</span
+            >
+            <span class="lang-en"
+              >Two long-term freelance engagements alongside my project
+              work.</span
+            >
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Odeq -->
+          <div
+            class="group glass-panel p-8 rounded-2xl border-brand-cyan/30 hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 shadow-[0_0_20px_rgba(102,252,241,0.1)] flex flex-col"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center group-hover:bg-brand-cyan/20 transition-colors text-brand-white"
+              >
+                <svg viewBox="0 0 100 100" class="w-10 h-10" role="img" aria-label="Odeq"><rect x="43.9" y="7.4" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="57.86794528132578" y="10.178397063338034" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="69.709397513309" y="18.09060248669102" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#C0613C"></rect><rect x="77.62160293666197" y="29.932054718674223" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="80.4" y="43.9" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="77.62160293666197" y="57.867945281325774" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="69.709397513309" y="69.70939751330899" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="57.86794528132578" y="77.62160293666197" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="43.9" y="80.4" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="29.932054718674223" y="77.62160293666197" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="18.09060248669102" y="69.709397513309" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="10.178397063338034" y="57.86794528132578" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="7.4" y="43.900000000000006" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="10.178397063338027" y="29.932054718674244" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="18.09060248669101" y="18.09060248669102" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect><rect x="29.93205471867423" y="10.178397063338034" width="12.2" height="12.2" rx="3.1719999999999997" ry="3.1719999999999997" fill="#1E5C4A"></rect></svg>
+              </div>
+              <span
+                class="text-xs font-mono bg-brand-cyan/10 text-brand-cyan px-3 py-1 rounded-full"
+              >
+                <span class="lang-de">CTO &amp; Projektleitung · Freelance</span
+                ><span class="lang-en">CTO &amp; Project Lead · Freelance</span>
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-brand-white mb-1">Odeq</h3>
+            <p class="text-sm text-brand-teal font-medium mb-4">
+              <span class="lang-de"
+                >Geprüfte medizinische Karteikarten aus lizenzierten Quellen –
+                für Anki™</span
+              >
+              <span class="lang-en"
+                >Verified medical flashcards from licensed sources – for
+                Anki™</span
+              >
+            </p>
+            <div class="text-brand-muted text-sm leading-relaxed flex-1">
+              <p class="lang-de">
+                Als Freelance-CTO verantworte ich bei Odeq die Produktvision,
+                koordiniere die
+                Entwicklung und führe einen Entwickler. Meine Erfahrung mit
+                LLM-Pipelines fließt direkt in die Content-Pipeline ein, die
+                offizielle Lehrbuchinhalte in quellenverankerte Karteikarten
+                übersetzt.
+              </p>
+              <p class="lang-en">
+                As freelance CTO at Odeq I shape the product vision, coordinate
+                development and
+                manage a developer. My LLM pipeline experience feeds directly
+                into the content pipeline that turns official textbook material
+                into source-anchored flashcards.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between pt-4 mt-4 border-t border-brand-border"
+            >
+              <div class="flex gap-2 text-xs text-brand-muted">
+                <span class="bg-brand-gray px-2 py-1 rounded">Product</span>
+                <span class="bg-brand-gray px-2 py-1 rounded">LLM Pipelines</span>
+                <span class="bg-brand-gray px-2 py-1 rounded">MedTech</span>
+              </div>
+              <a
+                href="https://odeq.io/"
+                target="_blank"
+                rel="noopener"
+                class="text-sm font-bold text-brand-cyan hover:underline flex items-center gap-1"
+                >odeq.io
+                <span class="material-symbols-outlined text-base"
+                  >open_in_new</span
+                ></a
+              >
+            </div>
+          </div>
+          <!-- ChangeMy.AI -->
+          <div
+            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 flex flex-col"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center group-hover:bg-brand-cyan/20 transition-colors text-brand-white"
+              >
+                <svg viewBox="0 0 825 1528" class="h-9 w-auto" role="img" aria-label="ChangeMy.AI" fill="currentColor"><path d="M188.996,837.475l446.062,0c50.4,0 97.854,-19.633 133.529,-55.471c35.671,-35.675 55.471,-83.125 55.471,-133.525c0,-104.233 -84.762,-188.996 -189,-188.996l-445.571,0c-22.908,0 -41.238,-18.329 -41.238,-40.908c0,-22.583 18.167,-40.579 40.417,-40.908l446.392,0c50.4,0 97.854,-19.638 133.529,-55.471c35.671,-35.675 55.471,-83.129 55.471,-133.525c0,-103.908 -84.762,-188.671 -189,-188.671l-82.142,0l0,148.087l82.142,0c22.583,0 40.746,18.329 40.746,40.908c0,22.583 -18.325,40.908 -40.746,40.908l-445.571,0c-50.892,0 -98.179,19.638 -134.017,55.308c-35.671,35.675 -55.471,83.125 -55.471,133.525c0,104.238 84.762,188.996 188.996,188.996l446.062,0c22.583,0 40.746,18.329 40.746,40.908c0,22.583 -18.325,40.908 -40.746,40.908l-445.571,0c-50.892,0 -98.342,19.637 -134.017,55.475c-35.671,35.671 -55.471,83.125 -55.471,133.521c0,104.238 84.762,188.996 188.996,188.996l446.062,0c22.583,0 40.746,18.329 40.746,40.908c0,22.583 -18.325,40.912 -40.746,40.912l-445.571,0c0,0 -24.546,1.796 -32.725,2.779c-89.346,11.617 -156.6,92.942 -156.6,186.212c0,104.238 84.763,188.996 189,188.996l32.725,0l0,-148.088l-32.725,0c-22.583,0 -40.912,-18.325 -40.912,-40.908c0,-10.796 4.258,-21.104 11.946,-28.8c7.692,-7.688 18,-11.942 28.8,-11.942l446.062,0c50.4,0 97.854,-19.638 133.525,-55.471c35.675,-35.675 55.475,-83.129 55.475,-133.525c0,-104.237 -84.762,-189 -189,-189l-448.679,0c-21.275,-1.308 -38.292,-19.142 -38.292,-40.742c0,-21.6 18.329,-40.908 40.908,-40.908l0,-0.492Z"/></svg>
+              </div>
+              <span
+                class="text-xs font-mono bg-brand-cyan/10 text-brand-cyan px-3 py-1 rounded-full"
+                >Generative AI Engineer · Freelance</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold text-brand-white mb-1">ChangeMy.AI</h3>
+            <p class="text-sm text-brand-teal font-medium mb-4">
+              <span class="lang-de"
+                >KI-Start-up aus Österreich · seit Oktober 2025</span
+              >
+              <span class="lang-en">Austrian AI start-up · since October 2025</span>
+            </p>
+            <div class="text-brand-muted text-sm leading-relaxed flex-1">
+              <p class="lang-de">
+                Ich baue produktive RAG-Systeme, Task-Agenten und Voice-Agenten
+                für echte Geschäftsprozesse und orchestriere Automatisierungen
+                mit n8n, Vapi, Twilio und eigenem Code. Eigene Ideen fließen
+                direkt in die Weiterentwicklung der Plattform ein.
+              </p>
+              <p class="lang-en">
+                I build production RAG systems, task agents and voice agents for
+                real business workflows and orchestrate automation with n8n,
+                Vapi, Twilio and custom code. My own ideas feed directly into
+                the platform's roadmap.
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between pt-4 mt-4 border-t border-brand-border"
+            >
+              <div class="flex gap-2 text-xs text-brand-muted">
+                <span class="bg-brand-gray px-2 py-1 rounded">RAG</span>
+                <span class="bg-brand-gray px-2 py-1 rounded">Voice Agents</span>
+                <span class="bg-brand-gray px-2 py-1 rounded">n8n</span>
+              </div>
+              <a
+                href="https://changemy.ai/"
+                target="_blank"
+                rel="noopener"
+                class="text-sm font-bold text-brand-cyan hover:underline flex items-center gap-1"
+                >changemy.ai
+                <span class="material-symbols-outlined text-base"
+                  >open_in_new</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section
+      class="py-20 bg-brand-dark/50 relative z-10 animate-fade-in-up"
+      id="publications"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl font-bold mb-4 text-center text-brand-white">
+          <span class="lang-de"
+            ><span class="text-brand-cyan">Publikationen</span></span
+          >
+          <span class="lang-en"
+            ><span class="text-brand-cyan">Publications</span></span
+          >
+        </h2>
+        <p class="text-brand-muted text-center mb-10">
+          <span class="lang-de"
+            >Peer-reviewed Forschung, die in meine tägliche Arbeit
+            einfließt.</span
+          >
+          <span class="lang-en"
+            >Peer-reviewed research that feeds into my day-to-day work.</span
+          >
+        </p>
+        <article
+          class="glass-panel p-8 rounded-2xl border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
+        >
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span
+              class="text-xs font-mono font-bold bg-brand-cyan/10 text-brand-cyan px-3 py-1 rounded-full"
+              >ACL 2026</span
+            >
+            <span class="text-xs font-mono text-brand-muted uppercase tracking-wide">
+              <span class="lang-de">System Demonstrations · Peer-reviewed</span
+              ><span class="lang-en">System Demonstrations · Peer-reviewed</span>
+            </span>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-brand-white mb-3 leading-snug">
+            Rankify: A Comprehensive Python Toolkit for Retrieval, Re-Ranking,
+            and Retrieval-Augmented Generation
+          </h3>
+          <p class="text-sm text-brand-muted mb-4">
+            Abdelrahman Abdallah, Bhawna Piryani, Jamshid Mozafari,
+            <span class="text-brand-white font-semibold">Andreas Herzinger</span>,
+            Jamie Holdcroft, Adam Jatowt
+          </p>
+          <p class="text-sm text-brand-muted mb-6">
+            <span class="lang-de"
+              >Proceedings of the 64th Annual Meeting of the Association for
+              Computational Linguistics, Volume 3: System Demonstrations.
+              Meine Beiträge aus der Bachelorarbeit (RAG-Methoden,
+              Inferenzpunkte, Prompt-Evaluation) sind Teil des Papers.</span
+            >
+            <span class="lang-en"
+              >Proceedings of the 64th Annual Meeting of the Association for
+              Computational Linguistics, Volume 3: System Demonstrations. My
+              bachelor thesis contributions (RAG methods, inference points,
+              prompt evaluation) are part of the paper.</span
+            >
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://github.com/DataScienceUIBK/Rankify"
+              target="_blank"
+              rel="noopener"
+              class="text-sm font-bold text-brand-cyan hover:underline flex items-center gap-1"
+            >
+              <span class="material-symbols-outlined text-base">code</span>
+              GitHub · DataScienceUIBK/Rankify
+            </a>
+            <a
+              href="https://scholar.google.com/scholar?q=%22Rankify%3A+A+Comprehensive+Python+Toolkit+for+Retrieval%2C+Re-Ranking%2C+and+Retrieval-Augmented+Generation%22"
+              target="_blank"
+              rel="noopener"
+              class="text-sm font-bold text-brand-cyan hover:underline flex items-center gap-1"
+            >
+              <span class="material-symbols-outlined text-base">school</span>
+              Google Scholar
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-20 relative z-10 animate-fade-in-up" id="journey">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center text-brand-white">
+          <span class="lang-de"
+            >Mein <span class="text-brand-cyan">Werdegang</span></span
+          >
+          <span class="lang-en"
+            >My <span class="text-brand-cyan">Journey</span></span
+          >
+        </h2>
+        <div
+          class="relative border-l-2 border-brand-gray ml-3 md:ml-6 space-y-12"
+        >
+          <!-- Item 0 (Odeq CTO) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-cyan ring-4 ring-brand-dark shadow-[0_0_10px_rgba(102,252,241,0.5)]"
+            ></span>
+            <div
+              class="glass-panel p-6 rounded-lg border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-cyan font-mono text-xs uppercase tracking-wide"
+                >
+                  <span class="lang-de">Mai 2026 - Heute</span
+                  ><span class="lang-en">May 2026 - Present</span>
+                </span>
+                <span class="text-brand-muted text-xs">Remote</span>
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                <span class="lang-de">CTO &amp; Projektleitung</span><span class="lang-en">CTO &amp; Project Lead</span>
+              </h3>
+              <div class="text-brand-teal text-sm font-medium mb-2">
+                Odeq · Freelance
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <p class="lang-de">
+                  Produktvision, Koordination der Entwicklung und Führung eines Entwicklers für eine Plattform mit geprüften medizinischen Karteikarten für Anki. Meine Erfahrung mit LLM-Pipelines fließt direkt in die Content-Pipeline ein.
+                </p>
+                <p class="lang-en">
+                  Product vision, development coordination and management of a developer for a platform of verified medical flashcards for Anki. My LLM pipeline experience feeds directly into the content pipeline.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 0 (HerzingerAI Self-Employed) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-cyan ring-4 ring-brand-dark shadow-[0_0_10px_rgba(102,252,241,0.5)]"
+            ></span>
+            <div
+              class="glass-panel p-6 rounded-lg border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-cyan font-mono text-xs uppercase tracking-wide"
+                >
+                  <span class="lang-de">Jan 2026 - Heute</span
+                  ><span class="lang-en">Jan 2026 - Present</span>
+                </span>
+                <span class="text-brand-muted text-xs">Remote</span>
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                <span class="lang-de">Selbstständiger Generative AI Engineer</span><span class="lang-en">Self-Employed Generative AI Engineer</span>
+              </h3>
+              <div class="text-brand-teal text-sm font-medium mb-2">
+                HerzingerAI
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <p class="lang-de">
+                  KI-native Anwendungen, RAG-Lösungen in Python, n8n-Automatisierungen und Generative-AI-Engineering für Unternehmen.
+                </p>
+                <p class="lang-en">
+                  AI-native applications, RAG solutions in Python, n8n automation and generative AI engineering for businesses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 1 (Freelancing) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-cyan ring-4 ring-brand-dark shadow-[0_0_10px_rgba(102,252,241,0.5)]"
+            ></span>
+            <div
+              class="glass-panel p-6 rounded-lg border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-cyan font-mono text-xs uppercase tracking-wide"
+                >
+                  <span class="lang-de">Okt 2025 - Heute</span
+                  ><span class="lang-en">Oct 2025 - Present</span>
+                </span>
+                <span class="text-brand-muted text-xs">Remote</span>
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                Generative AI Engineer
+              </h3>
+              <div class="text-brand-teal text-sm font-medium mb-2">
+                ChangeMy.AI &amp; Freelance
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <p class="lang-de">
+                  Leitender Entwickler für RAG-Systeme und autonome
+                  Task-Agenten. Ich orchestriere komplexe
+                  Automatisierungspipelines mit n8n, Vapi und Twilio zur
+                  Optimierung von Geschäftsprozessen.
+                </p>
+                <p class="lang-en">
+                  Leading the development of RAG systems and autonomous task
+                  agents. I help orchestrate complex automation pipelines using
+                  n8n, Vapi, and Twilio to streamline business workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 (Rankify & Research) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
+            ></span>
+            <div
+              class="glass-panel p-6 rounded-lg border-l-4 border-brand-gray hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-muted font-mono text-xs uppercase tracking-wide"
+                  ><span class="lang-de">Mär 2025 - Sep 2025</span
+                  ><span class="lang-en">Mar 2025 - Sep 2025</span></span
+                >
+                <span class="text-brand-muted text-xs">Research</span>
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                Rankify Framework &amp; NLP Specialization
+              </h3>
+              <div class="text-brand-muted text-sm font-medium mb-2">
+                <span class="lang-de">Bachelorarbeit &amp; Forschung</span
+                ><span class="lang-en">Bachelor Thesis &amp; Research</span>
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <p class="lang-de">
+                  Forschung und Entwicklung eines RAG-Frameworks als
+                  Bachelorarbeit. Spezialisierung auf NLP und Data Science im
+                  letzten Studienjahr an der Universität Innsbruck.
+                </p>
+                <p class="lang-en">
+                  Research and development of a RAG framework as Bachelor
+                  thesis. Specialized in NLP and Data Science during the final
+                  year at the University of Innsbruck.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 (BSc Education) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
+            ></span>
+            <div
+              class="glass-panel-no-border p-6 rounded-lg hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-teal font-mono text-xs uppercase tracking-wide"
+                  >2022 - 2025</span
+                >
+                <span class="text-brand-muted text-xs"
+                  ><span
+                    class="material-symbols-outlined text-[10px] align-middle"
+                    >school</span
+                  >
+                  Education</span
+                >
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                <span class="lang-de">B.Sc. Informatik</span
+                ><span class="lang-en">B.Sc. Computer Science</span>
+              </h3>
+              <div class="text-brand-muted text-sm font-medium mb-2">
+                <span class="lang-de">Universität Innsbruck</span
+                ><span class="lang-en">University of Innsbruck</span>
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <p class="lang-de">
+                  Schwerpunkt Software Engineering. Spezialisierung auf Natural
+                  Language Processing (NLP) und Data Science im Abschlussjahr.
+                </p>
+                <p class="lang-en">
+                  Focus on Software Engineering. Specialized in Natural Language
+                  Processing (NLP) and Data Science in the final year.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 (MatheArena) -->
+          <div class="relative pl-8 md:pl-12">
+            <span
+              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
+            ></span>
+            <div
+              class="glass-panel p-6 rounded-lg border-l-4 border-brand-gray hover:bg-brand-gray/20 transition-colors"
+            >
+              <div class="flex justify-between items-start mb-1">
+                <span
+                  class="text-brand-muted font-mono text-xs uppercase tracking-wide"
+                  ><span class="lang-de">Feb 2022 - Dez 2022</span
+                  ><span class="lang-en">Feb 2022 - Dec 2022</span></span
+                >
+                <span class="text-brand-muted text-xs">Remote</span>
+              </div>
+              <h3 class="text-lg font-bold text-brand-white">
+                Application Developer
+              </h3>
+              <div class="text-brand-muted text-sm font-medium mb-2">
+                Mathe-Arena
+              </div>
+              <div class="text-brand-muted text-sm mt-2">
+                <span
+                  class="bg-brand-gray text-brand-white text-[10px] px-1 rounded mr-1"
+                  >PREVIOUS</span
+                >
+                <p class="lang-de">
+                  Entwicklung plattformübergreifender Mobile Apps mit Flutter.
+                  Arbeit an REST-APIs und NoSQL-Datenbankmigrationen.
+                </p>
+                <p class="lang-en">
+                  Built cross-platform mobile applications with Flutter. Worked
+                  on REST-APIs and NoSQL database migrations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Honours Section -->
+    <section
+      class="py-24 bg-brand-gray/10 relative z-10 animate-fade-in-up"
+      id="awards"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4 text-brand-white">
+            <span class="lang-de"
+              >Auszeichnungen &amp;
+              <span class="text-brand-cyan">Ehrungen</span></span
+            >
+            <span class="lang-en"
+              >Honours &amp; <span class="text-brand-cyan">Awards</span></span
+            >
+          </h2>
+          <p class="text-brand-muted">
+            <span class="lang-de"
+              >Anerkennung für akademische und sportliche Exzellenz.</span
+            >
+            <span class="lang-en"
+              >Recognition for academic and athletic excellence.</span
+            >
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
+          >
+            <div
+              class="w-12 h-12 mx-auto bg-brand-cyan/10 rounded-full flex items-center justify-center mb-4 text-brand-cyan"
+            >
+              <span class="material-symbols-outlined">emoji_events</span>
+            </div>
+            <h3 class="font-bold text-brand-white mb-2">
+              <span class="lang-de">Physik Olympiade Gold</span
+              ><span class="lang-en">Physics Olympiad Gold</span>
+            </h3>
+            <p class="text-sm text-brand-muted">
+              <span class="lang-de"
+                >Goldmedaille bei der Physik-Olympiade Tirol (2021) und
+                Qualifikation für das Bundesfinale.</span
+              >
+              <span class="lang-en"
+                >Won gold medal in Physics Olympiad Tirol (2021) and qualified
+                for Austrian finals.</span
+              >
+            </p>
+          </div>
+          <div
+            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
+          >
+            <div
+              class="w-12 h-12 mx-auto bg-brand-teal/10 rounded-full flex items-center justify-center mb-4 text-brand-teal"
+            >
+              <span class="material-symbols-outlined">science</span>
+            </div>
+            <h3 class="font-bold text-brand-white mb-2">
+              Dr. Hans Riegel Prize
+            </h3>
+            <p class="text-sm text-brand-muted">
+              <span class="lang-de"
+                >3. Platz für Facharbeit über ein Michelson-Interferometer aus
+                LEGO-Steinen.</span
+              >
+              <span class="lang-en"
+                >3rd place for thesis on Michelson-Interferometer built with
+                LEGO blocks.</span
+              >
+            </p>
+          </div>
+          <div
+            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
+          >
+            <div
+              class="w-12 h-12 mx-auto bg-brand-cyan/10 rounded-full flex items-center justify-center mb-4 text-brand-cyan"
+            >
+              <span class="material-symbols-outlined">fitness_center</span>
+            </div>
+            <h3 class="font-bold text-brand-white mb-2">
+              <span class="lang-de">Staatsmeister</span
+              ><span class="lang-en">National Champion</span>
+            </h3>
+            <p class="text-sm text-brand-muted">
+              <span class="lang-de"
+                >Österreichischer Meister (U18) im Diskuswurf (45,95m). Tiroler
+                Rekordhalter.</span
+              >
+              <span class="lang-en"
+                >Austrian Champion (U18) in Discus Throw (45.95m). Tyrolean
+                record holder.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="py-24 relative z-10 animate-fade-in-up" id="projects">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -954,274 +1542,6 @@
       </div>
     </section>
 
-    <!-- Experience Timeline -->
-    <section class="py-20 relative z-10 animate-fade-in-up" id="journey">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center text-brand-white">
-          <span class="lang-de"
-            >Mein <span class="text-brand-cyan">Werdegang</span></span
-          >
-          <span class="lang-en"
-            >My <span class="text-brand-cyan">Journey</span></span
-          >
-        </h2>
-        <div
-          class="relative border-l-2 border-brand-gray ml-3 md:ml-6 space-y-12"
-        >
-          <!-- Item 1 (Freelancing) -->
-          <div class="relative pl-8 md:pl-12">
-            <span
-              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-cyan ring-4 ring-brand-dark shadow-[0_0_10px_rgba(102,252,241,0.5)]"
-            ></span>
-            <div
-              class="glass-panel p-6 rounded-lg border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
-            >
-              <div class="flex justify-between items-start mb-1">
-                <span
-                  class="text-brand-cyan font-mono text-xs uppercase tracking-wide"
-                >
-                  <span class="lang-de">Sommer 2025 - Heute</span
-                  ><span class="lang-en">Summer 2025 - Present</span>
-                </span>
-                <span class="text-brand-muted text-xs">Remote</span>
-              </div>
-              <h3 class="text-lg font-bold text-brand-white">
-                Generative AI Engineer
-              </h3>
-              <div class="text-brand-teal text-sm font-medium mb-2">
-                ChangeMy.AI &amp; Freelance
-              </div>
-              <div class="text-brand-muted text-sm mt-2">
-                <p class="lang-de">
-                  Leitender Entwickler für RAG-Systeme und autonome
-                  Task-Agenten. Ich orchestriere komplexe
-                  Automatisierungspipelines mit n8n, Vapi und Twilio zur
-                  Optimierung von Geschäftsprozessen.
-                </p>
-                <p class="lang-en">
-                  Leading the development of RAG systems and autonomous task
-                  agents. I help orchestrate complex automation pipelines using
-                  n8n, Vapi, and Twilio to streamline business workflows.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 (Rankify & Research) -->
-          <div class="relative pl-8 md:pl-12">
-            <span
-              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
-            ></span>
-            <div
-              class="glass-panel p-6 rounded-lg border-l-4 border-brand-gray hover:bg-brand-gray/20 transition-colors"
-            >
-              <div class="flex justify-between items-start mb-1">
-                <span
-                  class="text-brand-muted font-mono text-xs uppercase tracking-wide"
-                  >Jan 2025 - Jun 2025</span
-                >
-                <span class="text-brand-muted text-xs">Research</span>
-              </div>
-              <h3 class="text-lg font-bold text-brand-white">
-                Rankify Framework &amp; NLP Specialization
-              </h3>
-              <div class="text-brand-muted text-sm font-medium mb-2">
-                <span class="lang-de">Bachelorarbeit &amp; Forschung</span
-                ><span class="lang-en">Bachelor Thesis &amp; Research</span>
-              </div>
-              <div class="text-brand-muted text-sm mt-2">
-                <p class="lang-de">
-                  Forschung und Entwicklung eines RAG-Frameworks als
-                  Bachelorarbeit. Spezialisierung auf NLP und Data Science im
-                  letzten Studienjahr an der Universität Innsbruck.
-                </p>
-                <p class="lang-en">
-                  Research and development of a RAG framework as Bachelor
-                  thesis. Specialized in NLP and Data Science during the final
-                  year at the University of Innsbruck.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 (BSc Education) -->
-          <div class="relative pl-8 md:pl-12">
-            <span
-              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
-            ></span>
-            <div
-              class="glass-panel-no-border p-6 rounded-lg hover:bg-brand-gray/20 transition-colors"
-            >
-              <div class="flex justify-between items-start mb-1">
-                <span
-                  class="text-brand-teal font-mono text-xs uppercase tracking-wide"
-                  >2022 - 2025</span
-                >
-                <span class="text-brand-muted text-xs"
-                  ><span
-                    class="material-symbols-outlined text-[10px] align-middle"
-                    >school</span
-                  >
-                  Education</span
-                >
-              </div>
-              <h3 class="text-lg font-bold text-brand-white">
-                <span class="lang-de">B.Sc. Informatik</span
-                ><span class="lang-en">B.Sc. Computer Science</span>
-              </h3>
-              <div class="text-brand-muted text-sm font-medium mb-2">
-                <span class="lang-de">Universität Innsbruck</span
-                ><span class="lang-en">University of Innsbruck</span>
-              </div>
-              <div class="text-brand-muted text-sm mt-2">
-                <p class="lang-de">
-                  Schwerpunkt Software Engineering. Spezialisierung auf Natural
-                  Language Processing (NLP) und Data Science im Abschlussjahr.
-                </p>
-                <p class="lang-en">
-                  Focus on Software Engineering. Specialized in Natural Language
-                  Processing (NLP) and Data Science in the final year.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 (MatheArena) -->
-          <div class="relative pl-8 md:pl-12">
-            <span
-              class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-brand-gray ring-4 ring-brand-dark"
-            ></span>
-            <div
-              class="glass-panel p-6 rounded-lg border-l-4 border-brand-gray hover:bg-brand-gray/20 transition-colors"
-            >
-              <div class="flex justify-between items-start mb-1">
-                <span
-                  class="text-brand-muted font-mono text-xs uppercase tracking-wide"
-                  >2021 - 2022</span
-                >
-                <span class="text-brand-muted text-xs">Remote</span>
-              </div>
-              <h3 class="text-lg font-bold text-brand-white">
-                Application Developer
-              </h3>
-              <div class="text-brand-muted text-sm font-medium mb-2">
-                Mathe-Arena
-              </div>
-              <div class="text-brand-muted text-sm mt-2">
-                <span
-                  class="bg-brand-gray text-brand-white text-[10px] px-1 rounded mr-1"
-                  >PREVIOUS</span
-                >
-                <p class="lang-de">
-                  Entwicklung plattformübergreifender Mobile Apps mit Flutter.
-                  Arbeit an REST-APIs und NoSQL-Datenbankmigrationen.
-                </p>
-                <p class="lang-en">
-                  Built cross-platform mobile applications with Flutter. Worked
-                  on REST-APIs and NoSQL database migrations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Awards & Honours Section -->
-    <section
-      class="py-24 bg-brand-gray/10 relative z-10 animate-fade-in-up"
-      id="awards"
-    >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-4 text-brand-white">
-            <span class="lang-de"
-              >Auszeichnungen &amp;
-              <span class="text-brand-cyan">Ehrungen</span></span
-            >
-            <span class="lang-en"
-              >Honours &amp; <span class="text-brand-cyan">Awards</span></span
-            >
-          </h2>
-          <p class="text-brand-muted">
-            <span class="lang-de"
-              >Anerkennung für akademische und sportliche Exzellenz.</span
-            >
-            <span class="lang-en"
-              >Recognition for academic and athletic excellence.</span
-            >
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div
-            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-12 h-12 mx-auto bg-brand-cyan/10 rounded-full flex items-center justify-center mb-4 text-brand-cyan"
-            >
-              <span class="material-symbols-outlined">emoji_events</span>
-            </div>
-            <h3 class="font-bold text-brand-white mb-2">
-              <span class="lang-de">Physik Olympiade Gold</span
-              ><span class="lang-en">Physics Olympiad Gold</span>
-            </h3>
-            <p class="text-sm text-brand-muted">
-              <span class="lang-de"
-                >Goldmedaille bei der Physik-Olympiade Tirol (2021) und
-                Qualifikation für das Bundesfinale.</span
-              >
-              <span class="lang-en"
-                >Won gold medal in Physics Olympiad Tirol (2021) and qualified
-                for Austrian finals.</span
-              >
-            </p>
-          </div>
-          <div
-            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-12 h-12 mx-auto bg-brand-teal/10 rounded-full flex items-center justify-center mb-4 text-brand-teal"
-            >
-              <span class="material-symbols-outlined">science</span>
-            </div>
-            <h3 class="font-bold text-brand-white mb-2">
-              Dr. Hans Riegel Prize
-            </h3>
-            <p class="text-sm text-brand-muted">
-              <span class="lang-de"
-                >3. Platz für Facharbeit über ein Michelson-Interferometer aus
-                LEGO-Steinen.</span
-              >
-              <span class="lang-en"
-                >3rd place for thesis on Michelson-Interferometer built with
-                LEGO blocks.</span
-              >
-            </p>
-          </div>
-          <div
-            class="glass-panel p-6 rounded-xl text-center hover:-translate-y-1 transition-transform"
-          >
-            <div
-              class="w-12 h-12 mx-auto bg-brand-cyan/10 rounded-full flex items-center justify-center mb-4 text-brand-cyan"
-            >
-              <span class="material-symbols-outlined">fitness_center</span>
-            </div>
-            <h3 class="font-bold text-brand-white mb-2">
-              <span class="lang-de">Staatsmeister</span
-              ><span class="lang-en">National Champion</span>
-            </h3>
-            <p class="text-sm text-brand-muted">
-              <span class="lang-de"
-                >Österreichischer Meister (U18) im Diskuswurf (45,95m). Tiroler
-                Rekordhalter.</span
-              >
-              <span class="lang-en"
-                >Austrian Champion (U18) in Discus Throw (45.95m). Tyrolean
-                record holder.</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
     <section
       class="py-24 relative z-10 bg-gradient-to-t from-brand-dark to-transparent animate-fade-in-up"
@@ -1290,7 +1610,7 @@
         <footer
           class="mt-20 pt-8 border-t border-brand-gray text-brand-muted text-sm"
         >
-          <p>© 2025 Andreas Herzinger. Built with Tailwind CSS.</p>
+          <p>© 2026 Andreas Herzinger</p>
         </footer>
       </div>
     </section>

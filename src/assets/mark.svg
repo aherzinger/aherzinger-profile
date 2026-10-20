@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Bergsee mark: ridge (ink), shoreline (ink), reflection (lake green #22525a). On dark backgrounds use #fff for ink and #8fc4cb for the reflection. -->
+  <path d="M5 25 L16 11 L23 19 L30 13 L43 25" fill="none" stroke="#000" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M5 25 H43" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M9 29 L16 38 L23 31 L30 36 L39 29" fill="none" stroke="#22525a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
