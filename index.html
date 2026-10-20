@@ -814,312 +814,77 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="py-24 relative z-10 animate-fade-in-up" id="projects">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Header & Filter -->
-        <div
-          class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6"
+    <!-- Publications Section -->
+    <section
+      class="py-20 bg-brand-dark/50 relative z-10 animate-fade-in-up"
+      id="publications"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl font-bold mb-4 text-center text-brand-white">
+          <span class="lang-de"
+            ><span class="text-brand-cyan">Publikationen</span></span
+          >
+          <span class="lang-en"
+            ><span class="text-brand-cyan">Publications</span></span
+          >
+        </h2>
+        <p class="text-brand-muted text-center mb-10">
+          <span class="lang-de"
+            >Peer-reviewed Forschung, die in meine tägliche Arbeit
+            einfließt.</span
+          >
+          <span class="lang-en"
+            >Peer-reviewed research that feeds into my day-to-day work.</span
+          >
+        </p>
+        <article
+          class="glass-panel p-8 rounded-2xl border-l-4 border-brand-cyan hover:bg-brand-gray/20 transition-colors"
         >
-          <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-brand-white">
-              <span class="lang-de"
-                >Ausgewählte
-                <span class="text-brand-cyan">Implementierungen</span></span
-              >
-              <span class="lang-en"
-                >Featured
-                <span class="text-brand-cyan">Implementations</span></span
-              >
-            </h2>
-            <p class="text-brand-muted">
-              <span class="lang-de"
-                >KI-Architekturen und vergangene Engineering-Projekte.</span
-              >
-              <span class="lang-en"
-                >Showcase of AI architectures and past engineering
-                projects.</span
-              >
-            </p>
-          </div>
-          <!-- Filters -->
-          <div
-            class="flex flex-wrap gap-2 p-1 glass-panel rounded-lg self-start"
-          >
-            <button
-              class="filter-btn active px-4 py-2 rounded-md text-sm font-medium transition-all bg-brand-cyan text-brand-dark"
-              onclick="filterProjects('all', this)"
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span
+              class="text-xs font-mono font-bold bg-brand-cyan/10 text-brand-cyan px-3 py-1 rounded-full"
+              >ACL 2026</span
             >
-              All
-            </button>
-            <button
-              class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-brand-muted hover:text-brand-white transition-all"
-              onclick="filterProjects('ai', this)"
+            <span class="text-xs font-mono text-brand-muted uppercase tracking-wide">
+              <span class="lang-de">System Demonstrations · Peer-reviewed</span
+              ><span class="lang-en">System Demonstrations · Peer-reviewed</span>
+            </span>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-brand-white mb-3 leading-snug">
+            Rankify: A Comprehensive Python Toolkit for Retrieval, Re-Ranking,
+            and Retrieval-Augmented Generation
+          </h3>
+          <p class="text-sm text-brand-muted mb-4">
+            Abdelrahman Abdallah, Bhawna Piryani, Jamshid Mozafari,
+            <span class="text-brand-white font-semibold">Andreas Herzinger</span>,
+            Jamie Holdcroft, Adam Jatowt
+          </p>
+          <p class="text-sm text-brand-muted mb-6">
+            <span class="lang-de"
+              >Proceedings of the 64th Annual Meeting of the Association for
+              Computational Linguistics, Volume 3: System Demonstrations.
+              Meine Beiträge aus der Bachelorarbeit (RAG-Methoden,
+              Inferenzpunkte, Prompt-Evaluation) sind Teil des Papers.</span
             >
-              AI / RAG
-            </button>
-            <button
-              class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-brand-muted hover:text-brand-white transition-all"
-              onclick="filterProjects('mobile', this)"
+            <span class="lang-en"
+              >Proceedings of the 64th Annual Meeting of the Association for
+              Computational Linguistics, Volume 3: System Demonstrations. My
+              bachelor thesis contributions (RAG methods, inference points,
+              prompt evaluation) are part of the paper.</span
             >
-              <span class="lang-de">Vergangene Projekte</span
-              ><span class="lang-en">Previous Work</span>
-            </button>
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://github.com/DataScienceUIBK/Rankify"
+              target="_blank"
+              rel="noopener"
+              class="text-sm font-bold text-brand-cyan hover:underline flex items-center gap-1"
+            >
+              <span class="material-symbols-outlined text-base">code</span>
+              GitHub · DataScienceUIBK/Rankify
+            </a>
           </div>
-        </div>
-        <!-- Project Grid -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          id="projects-grid"
-        >
-          <!-- Project 1: Rankify (Thesis) -->
-          <div
-            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
-          >
-            <div class="relative h-48 overflow-hidden">
-              <img
-                alt="Rankify Framework"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="src/assets/rankifiy.png"
-              />
-              <div
-                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <a
-                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
-                  href="https://github.com/DataScienceUIBK/Rankify"
-                  target="_blank"
-                >
-                  <span class="lang-de">Code ansehen</span
-                  ><span class="lang-en">View Code</span>
-                </a>
-              </div>
-              <div
-                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
-              >
-                <span class="text-xs font-mono font-bold">Python</span>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col">
-              <h3
-                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
-              >
-                Rankify Framework
-              </h3>
-              <div class="text-brand-muted text-sm mb-4 flex-1">
-                <p class="lang-de">
-                  Bachelorarbeit zur Erweiterung eines RAG-Frameworks.
-                  Implementierung von Chain-of-Thought, Self-Consistency und
-                  ReAct-Ansätzen. Integration verschiedener Inferenzpunkte
-                  (Hugging Face, OpenAI, LiteLLM).
-                </p>
-                <p class="lang-en">
-                  Bachelor Thesis Project extending a RAG framework. Implemented
-                  Chain-of-Thought, Self-Consistency, and ReAct approaches.
-                  Integrated multiple inference points including Hugging Face,
-                  OpenAI, LiteLLM, and VLLM.
-                </p>
-              </div>
-              <div
-                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
-              >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >psychology</span
-                  >Generative AI</span
-                >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >school</span
-                  >Research</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 4: Federated Learning -->
-          <div
-            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
-          >
-            <div class="relative h-48 overflow-hidden">
-              <img
-                alt="Federated Learning System"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="src/assets/transfer_learning.png"
-              />
-              <div
-                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <a
-                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
-                  href="#"
-                >
-                  <span class="lang-de">Details ansehen</span
-                  ><span class="lang-en">View Details</span>
-                </a>
-              </div>
-              <div
-                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
-              >
-                <span class="text-xs font-mono font-bold">PyTorch</span>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col">
-              <h3
-                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
-              >
-                Federated Transfer Learning
-              </h3>
-              <div class="text-brand-muted text-sm mb-4 flex-1">
-                <p class="lang-de">
-                  Entwicklung eines datenschutzfreundlichen, dezentralen
-                  Trainingsprotokolls mit Transfer Learning. Ermöglicht das
-                  Trainieren von KI-Modellen auf verteilten Edge-Geräten.
-                </p>
-                <p class="lang-en">
-                  Development of a privacy-preserving decentralized training
-                  protocol using Transfer Learning. Enables training AI models
-                  across distributed edge devices.
-                </p>
-              </div>
-              <div
-                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
-              >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base">hub</span
-                  >Distributed AI</span
-                >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >security</span
-                  >Privacy</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 2: Fish-Finder -->
-          <div
-            class="project-card mobile glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-muted transition-all duration-500 flex flex-col h-full opacity-90"
-          >
-            <div class="relative h-48 overflow-hidden">
-              <img
-                alt="Fish-Finder App"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                src="src/assets/fishfinder.png"
-              />
-              <div
-                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <span
-                  class="px-4 py-2 bg-brand-gray text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
-                >
-                  <span class="lang-de">Vergangenes Projekt</span
-                  ><span class="lang-en">Past Project</span>
-                </span>
-              </div>
-              <div
-                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
-              >
-                <span class="text-xs font-mono font-bold">Flutter</span>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col">
-              <h3 class="text-xl font-bold text-brand-white mb-2">
-                Fish-Finder
-                <span
-                  class="text-xs font-normal border border-brand-muted px-2 rounded ml-2 text-brand-muted"
-                  >Legacy</span
-                >
-              </h3>
-              <div class="text-brand-muted text-sm mb-4 flex-1">
-                <p class="lang-de">
-                  Eine Mobile App für Fischer mit Google Maps API und Firebase.
-                  Zeigt meine Fähigkeit, komplette Produktlebenszyklen zu
-                  managen und skalierbare Systeme zu deployen.
-                </p>
-                <p class="lang-en">
-                  A mobile app for fishermen using Google Maps API and Firebase.
-                  Demonstrates my ability to manage full product lifecycles and
-                  deploy production-ready scalable systems.
-                </p>
-              </div>
-              <div
-                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
-              >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >smartphone</span
-                  >Mobile App</span
-                >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base">map</span
-                  >Google Maps</span
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project 3: Us-European Roulette -->
-          <div
-            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
-          >
-            <div class="relative h-48 overflow-hidden">
-              <img
-                alt="Roulette Simulation"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                src="src/assets/roulette.png"
-              />
-              <div
-                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <a
-                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
-                  href="https://github.com/aherzinger/Us-European-Roulette"
-                  target="_blank"
-                >
-                  <span class="lang-de">Code ansehen</span
-                  ><span class="lang-en">View Code</span>
-                </a>
-              </div>
-              <div
-                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
-              >
-                <span class="text-xs font-mono font-bold">Python</span>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col">
-              <h3
-                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
-              >
-                Us-European Roulette
-              </h3>
-              <div class="text-brand-muted text-sm mb-4 flex-1">
-                <p class="lang-de">
-                  Ein statistisches Simulationsprojekt zur Analyse der
-                  Wahrscheinlichkeitsvarianz zwischen amerikanischen und
-                  europäischen Roulettetischen mittels Monte-Carlo-Simulationen.
-                </p>
-                <p class="lang-en">
-                  A statistical simulation project analyzing the probability
-                  variance between American and European roulette tables using
-                  Monte Carlo simulations.
-                </p>
-              </div>
-              <div
-                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
-              >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >functions</span
-                  >Statistics</span
-                >
-                <span class="flex items-center gap-1"
-                  ><span class="material-symbols-outlined text-base"
-                    >bar_chart</span
-                  >Data Viz</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -1454,6 +1219,315 @@
                 record holder.</span
               >
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-24 relative z-10 animate-fade-in-up" id="projects">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header & Filter -->
+        <div
+          class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6"
+        >
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-brand-white">
+              <span class="lang-de"
+                >Ausgewählte
+                <span class="text-brand-cyan">Implementierungen</span></span
+              >
+              <span class="lang-en"
+                >Featured
+                <span class="text-brand-cyan">Implementations</span></span
+              >
+            </h2>
+            <p class="text-brand-muted">
+              <span class="lang-de"
+                >KI-Architekturen und vergangene Engineering-Projekte.</span
+              >
+              <span class="lang-en"
+                >Showcase of AI architectures and past engineering
+                projects.</span
+              >
+            </p>
+          </div>
+          <!-- Filters -->
+          <div
+            class="flex flex-wrap gap-2 p-1 glass-panel rounded-lg self-start"
+          >
+            <button
+              class="filter-btn active px-4 py-2 rounded-md text-sm font-medium transition-all bg-brand-cyan text-brand-dark"
+              onclick="filterProjects('all', this)"
+            >
+              All
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-brand-muted hover:text-brand-white transition-all"
+              onclick="filterProjects('ai', this)"
+            >
+              AI / RAG
+            </button>
+            <button
+              class="filter-btn px-4 py-2 rounded-md text-sm font-medium text-brand-muted hover:text-brand-white transition-all"
+              onclick="filterProjects('mobile', this)"
+            >
+              <span class="lang-de">Vergangene Projekte</span
+              ><span class="lang-en">Previous Work</span>
+            </button>
+          </div>
+        </div>
+        <!-- Project Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="projects-grid"
+        >
+          <!-- Project 1: Rankify (Thesis) -->
+          <div
+            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                alt="Rankify Framework"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src="src/assets/rankifiy.png"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <a
+                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                  href="https://github.com/DataScienceUIBK/Rankify"
+                  target="_blank"
+                >
+                  <span class="lang-de">Code ansehen</span
+                  ><span class="lang-en">View Code</span>
+                </a>
+              </div>
+              <div
+                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
+              >
+                <span class="text-xs font-mono font-bold">Python</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3
+                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
+              >
+                Rankify Framework
+              </h3>
+              <div class="text-brand-muted text-sm mb-4 flex-1">
+                <p class="lang-de">
+                  Bachelorarbeit zur Erweiterung eines RAG-Frameworks.
+                  Implementierung von Chain-of-Thought, Self-Consistency und
+                  ReAct-Ansätzen. Integration verschiedener Inferenzpunkte
+                  (Hugging Face, OpenAI, LiteLLM).
+                </p>
+                <p class="lang-en">
+                  Bachelor Thesis Project extending a RAG framework. Implemented
+                  Chain-of-Thought, Self-Consistency, and ReAct approaches.
+                  Integrated multiple inference points including Hugging Face,
+                  OpenAI, LiteLLM, and VLLM.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
+              >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >psychology</span
+                  >Generative AI</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >school</span
+                  >Research</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 4: Federated Learning -->
+          <div
+            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                alt="Federated Learning System"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src="src/assets/transfer_learning.png"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <a
+                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                  href="#"
+                >
+                  <span class="lang-de">Details ansehen</span
+                  ><span class="lang-en">View Details</span>
+                </a>
+              </div>
+              <div
+                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
+              >
+                <span class="text-xs font-mono font-bold">PyTorch</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3
+                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
+              >
+                Federated Transfer Learning
+              </h3>
+              <div class="text-brand-muted text-sm mb-4 flex-1">
+                <p class="lang-de">
+                  Entwicklung eines datenschutzfreundlichen, dezentralen
+                  Trainingsprotokolls mit Transfer Learning. Ermöglicht das
+                  Trainieren von KI-Modellen auf verteilten Edge-Geräten.
+                </p>
+                <p class="lang-en">
+                  Development of a privacy-preserving decentralized training
+                  protocol using Transfer Learning. Enables training AI models
+                  across distributed edge devices.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
+              >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base">hub</span
+                  >Distributed AI</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >security</span
+                  >Privacy</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2: Fish-Finder -->
+          <div
+            class="project-card mobile glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-muted transition-all duration-500 flex flex-col h-full opacity-90"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                alt="Fish-Finder App"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                src="src/assets/fishfinder.png"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 bg-brand-gray text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                >
+                  <span class="lang-de">Vergangenes Projekt</span
+                  ><span class="lang-en">Past Project</span>
+                </span>
+              </div>
+              <div
+                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
+              >
+                <span class="text-xs font-mono font-bold">Flutter</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3 class="text-xl font-bold text-brand-white mb-2">
+                Fish-Finder
+                <span
+                  class="text-xs font-normal border border-brand-muted px-2 rounded ml-2 text-brand-muted"
+                  >Legacy</span
+                >
+              </h3>
+              <div class="text-brand-muted text-sm mb-4 flex-1">
+                <p class="lang-de">
+                  Eine Mobile App für Fischer mit Google Maps API und Firebase.
+                  Zeigt meine Fähigkeit, komplette Produktlebenszyklen zu
+                  managen und skalierbare Systeme zu deployen.
+                </p>
+                <p class="lang-en">
+                  A mobile app for fishermen using Google Maps API and Firebase.
+                  Demonstrates my ability to manage full product lifecycles and
+                  deploy production-ready scalable systems.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
+              >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >smartphone</span
+                  >Mobile App</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base">map</span
+                  >Google Maps</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3: Us-European Roulette -->
+          <div
+            class="project-card ai glass-panel rounded-xl overflow-hidden group border border-transparent hover:border-brand-cyan/30 transition-all duration-500 flex flex-col h-full"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                alt="Roulette Simulation"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src="src/assets/roulette.png"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <a
+                  class="px-4 py-2 bg-brand-cyan text-brand-dark rounded-full font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                  href="https://github.com/aherzinger/Us-European-Roulette"
+                  target="_blank"
+                >
+                  <span class="lang-de">Code ansehen</span
+                  ><span class="lang-en">View Code</span>
+                </a>
+              </div>
+              <div
+                class="absolute top-4 right-4 project-badge backdrop-blur px-3 py-1 rounded-full border shadow-lg"
+              >
+                <span class="text-xs font-mono font-bold">Python</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <h3
+                class="text-xl font-bold text-brand-white mb-2 group-hover:text-brand-cyan transition-colors"
+              >
+                Us-European Roulette
+              </h3>
+              <div class="text-brand-muted text-sm mb-4 flex-1">
+                <p class="lang-de">
+                  Ein statistisches Simulationsprojekt zur Analyse der
+                  Wahrscheinlichkeitsvarianz zwischen amerikanischen und
+                  europäischen Roulettetischen mittels Monte-Carlo-Simulationen.
+                </p>
+                <p class="lang-en">
+                  A statistical simulation project analyzing the probability
+                  variance between American and European roulette tables using
+                  Monte Carlo simulations.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-4 text-sm text-brand-muted pt-4 border-t border-brand-border"
+              >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >functions</span
+                  >Statistics</span
+                >
+                <span class="flex items-center gap-1"
+                  ><span class="material-symbols-outlined text-base"
+                    >bar_chart</span
+                  >Data Viz</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
