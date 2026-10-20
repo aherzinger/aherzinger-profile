@@ -512,10 +512,9 @@
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Generative AI Card (Primary) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           <div
-            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 border-brand-cyan/30 shadow-[0_0_20px_rgba(102,252,241,0.1)]"
+            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 flex flex-col border-brand-cyan/30 shadow-[0_0_20px_rgba(102,252,241,0.1)]"
           >
             <div
               class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-cyan/20 transition-colors"
@@ -524,47 +523,64 @@
                 >psychology_alt</span
               >
             </div>
-            <h3 class="text-xl font-bold mb-4 text-brand-white">
-              <span class="lang-de">Maßgeschneiderte KI-Agenten</span>
-              <span class="lang-en">Custom AI Agents</span>
+            <h3 class="text-xl font-bold mb-3 text-brand-white">
+              <span class="lang-de">KI-Agenten &amp; RAG</span>
+              <span class="lang-en">AI Agents &amp; RAG</span>
             </h3>
-            <p class="text-xs text-brand-muted mb-4 h-12">
-              <span class="lang-de"
-                >Ich baue intelligente Agenten, die sicher mit Ihren Daten
-                chatten und Ihr Team unterstützen.</span
-              >
-              <span class="lang-en"
-                >I build intelligent agents that chat with your data and assist
-                your team securely.</span
-              >
+            <p class="text-sm text-brand-muted mb-6 flex-1 leading-relaxed">
+              <span class="lang-de">Assistenten, die auf Ihren Dokumenten, Datenbanken und E-Mails antworten – mit Quellenangabe und Rechteverwaltung, damit Antworten nachvollziehbar bleiben.</span>
+              <span class="lang-en">Assistants that answer from your documents, databases and e-mails – with source citations and access control, so every answer stays traceable.</span>
             </p>
-            <ul class="space-y-3">
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">RAG Pipelines</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Specialist</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">LangChain Dev</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Expert</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">Voice Agents (Vapi)</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Expert</span
-                >
-              </li>
+            <div class="lang-de">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">RAG-Pipelines (Python)</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Task-Agenten</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Voice-Agenten (Vapi)</li>
             </ul>
+            </div>
+            <div class="lang-en">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">RAG pipelines (Python)</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Task agents</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Voice agents (Vapi)</li>
+            </ul>
+            </div>
           </div>
-          <!-- Automation Card -->
           <div
-            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2"
+            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 flex flex-col border-brand-cyan/30 shadow-[0_0_20px_rgba(102,252,241,0.1)]"
+          >
+            <div
+              class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-cyan/20 transition-colors"
+            >
+              <span class="material-symbols-outlined text-3xl text-brand-cyan"
+                >hub</span
+              >
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-brand-white">
+              <span class="lang-de">MCP-Integrationen</span>
+              <span class="lang-en">MCP Integrations</span>
+            </h3>
+            <p class="text-sm text-brand-muted mb-6 flex-1 leading-relaxed">
+              <span class="lang-de">Ihre Unternehmensdaten sicher mit LLMs verbinden: ERP, CRM oder Ticketsystem werden per MCP-Server zum Werkzeug für Claude, ChatGPT und eigene Agenten. Auf Wunsch On-Premise – die Daten verlassen das Haus nicht.</span>
+              <span class="lang-en">Connect your company data safely with LLMs: your ERP, CRM or ticketing system becomes a tool for Claude, ChatGPT and custom agents via MCP servers. On-premise if required – your data never leaves the building.</span>
+            </p>
+            <div class="lang-de">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">MCP-Server</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">ERP/CRM-Anbindung</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">On-Premise / DSGVO</li>
+            </ul>
+            </div>
+            <div class="lang-en">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">MCP servers</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">ERP/CRM integration</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">On-premise / GDPR</li>
+            </ul>
+            </div>
+          </div>
+          <div
+            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 flex flex-col "
           >
             <div
               class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-cyan/20 transition-colors"
@@ -573,92 +589,61 @@
                 >settings</span
               >
             </div>
-            <h3 class="text-xl font-bold mb-4 text-brand-white">
-              <span class="lang-de">Workflow Automatisierung</span>
+            <h3 class="text-xl font-bold mb-3 text-brand-white">
+              <span class="lang-de">Workflow-Automatisierung</span>
               <span class="lang-en">Workflow Automation</span>
             </h3>
-            <p class="text-xs text-brand-muted mb-4 h-12">
-              <span class="lang-de"
-                >Ich verbinde Ihre bestehenden Tools mit KI, automatisiere
-                repetitive Aufgaben und schaffe Freiräume.</span
-              >
-              <span class="lang-en"
-                >I connect your existing tools to AI, automating repetitive
-                tasks and freeing up your time.</span
-              >
+            <p class="text-sm text-brand-muted mb-6 flex-1 leading-relaxed">
+              <span class="lang-de">Telefon- und Chat-Agenten vom Erstanruf bis zum Eintrag im System, Workflows in n8n und Anbindung an die Tools, die Sie schon haben.</span>
+              <span class="lang-en">Phone and chat agents from the first call to the entry in your system, workflows in n8n, and integration with the tools you already use.</span>
             </p>
-            <ul class="space-y-3">
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">n8n Workflows</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Specialist</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">API Integrations</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Specialist</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">Twilio / SMS</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Expert</span
-                >
-              </li>
+            <div class="lang-de">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">n8n</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Twilio / Telefonie</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">API-Integrationen</li>
             </ul>
+            </div>
+            <div class="lang-en">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">n8n</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Twilio / telephony</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">API integrations</li>
+            </ul>
+            </div>
           </div>
-          <!-- Foundation Card -->
           <div
-            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 opacity-90 hover:opacity-100"
+            class="group glass-panel p-8 rounded-2xl hover:border-brand-cyan/50 transition-all duration-300 hover:-translate-y-2 flex flex-col "
           >
             <div
-              class="w-14 h-14 bg-brand-gray rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-dark transition-colors"
+              class="w-14 h-14 bg-brand-cyan/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-cyan/20 transition-colors"
             >
-              <span class="material-symbols-outlined text-3xl text-brand-muted"
-                >layers</span
+              <span class="material-symbols-outlined text-3xl text-brand-cyan"
+                >architecture</span
               >
             </div>
-            <h3 class="text-xl font-bold mb-4 text-brand-white">
-              <span class="lang-de">Solides Engineering</span>
-              <span class="lang-en">Solid Engineering</span>
+            <h3 class="text-xl font-bold mb-3 text-brand-white">
+              <span class="lang-de">Technische Leitung</span>
+              <span class="lang-en">Technical Leadership</span>
             </h3>
-            <p class="text-xs text-brand-muted mb-4 h-12">
-              <span class="lang-de"
-                >Mein Hintergrund in Software-Engineering garantiert robuste,
-                skalierbare und sichere KI-Lösungen.</span
-              >
-              <span class="lang-en"
-                >My software engineering background ensures that the AI I build
-                is robust, scalable, and secure.</span
-              >
+            <p class="text-sm text-brand-muted mb-6 flex-1 leading-relaxed">
+              <span class="lang-de">Produktvision, Architektur und Koordination von Entwicklern für Teams, die ein KI-Produkt bauen – so, wie ich es als CTO bei Odeq mache.</span>
+              <span class="lang-en">Product vision, architecture and developer coordination for teams building an AI product – the way I do it as CTO at Odeq.</span>
             </p>
-            <ul class="space-y-3">
-              <li class="flex items-center justify-between">
-                <span class="text-brand-muted">Flutter / Mobile</span>
-                <span
-                  class="text-xs border border-brand-border text-brand-muted px-2 py-1 rounded"
-                  >Background</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">Git / CI/CD</span>
-                <span
-                  class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded"
-                  >Expert</span
-                >
-              </li>
-              <li class="flex items-center justify-between">
-                <span class="text-brand-white">Cloud Deployment</span>
-                <span
-                  class="text-xs bg-brand-gray text-brand-white px-2 py-1 rounded"
-                  >Advanced</span
-                >
-              </li>
+            <div class="lang-de">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">CTO as a Service</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Architektur</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">LLM-Pipelines</li>
             </ul>
+            </div>
+            <div class="lang-en">
+            <ul class="flex flex-wrap gap-2">
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">CTO as a service</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">Architecture</li>
+                <li class="text-xs bg-brand-cyan/10 text-brand-cyan px-2 py-1 rounded">LLM pipelines</li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>
