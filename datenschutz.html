@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Datenschutz | herzinger-ai</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="src/assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Dependencies: self-hosted (no third-party requests; see datenschutz.html) -->
+    <script src="src/vendor/tailwind-3.4.17.js"></script>
+    <link rel="stylesheet" href="src/styles/fonts.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "sans-serif"], mono: ["JetBrains Mono", "monospace"] },
+            colors: {
+              brand: {
+                dark: "var(--color-bg-main)", gray: "var(--color-bg-secondary)",
+                cyan: "var(--color-accent-primary)", teal: "var(--color-accent-secondary)",
+                white: "var(--color-text-main)", muted: "var(--color-text-muted)",
+                border: "var(--color-border)", panel: "var(--color-bg-panel)",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="src/styles/variables.css" />
+    <link rel="stylesheet" href="src/styles/base.css" />
+    <link rel="stylesheet" href="src/styles/legal.css" />
+  </head>
+  <body class="selection:bg-brand-cyan selection:text-brand-dark overflow-x-hidden relative">
+    <nav class="fixed top-0 w-full z-50 border-b border-brand-border shadow-lg bg-brand-dark/90" id="navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a class="flex-shrink-0 flex items-center space-x-2" href="index.html">
+            <span class="site-logo" aria-label="herzinger-ai">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M5 25 L16 11 L23 19 L30 13 L43 25" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" />
+                <path d="M5 25 H43" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M9 29 L16 38 L23 31 L30 36 L39 29" fill="none" stroke="#8fc4cb" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" />
+              </svg>
+              <span>herzinger<span class="ai">-ai</span></span>
+            </span>
+          </a>
+          <div class="flex items-center gap-2 sm:gap-4">
+            <a class="hover:text-brand-cyan transition-colors px-3 py-2 rounded-md text-sm font-medium" href="index.html">
+              <span class="lang-de">← Zur Startseite</span><span class="lang-en">← Back to home</span>
+            </a>
+            <button
+              class="flex items-center gap-1 text-brand-muted hover:text-brand-white transition-colors px-3 py-2 rounded-md text-sm font-medium border border-brand-border hover:border-brand-cyan/50 min-w-[60px] justify-center"
+              onclick="toggleLanguage()"
+            >
+              <span class="lang-de font-bold text-brand-cyan">DE</span><span class="lang-de text-xs">/EN</span>
+              <span class="lang-en font-bold text-brand-cyan">EN</span><span class="lang-en text-xs">/DE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="legal">
+      <article class="lang-de" lang="de">
+
+        <h1>Datenschutzerklärung</h1>
+        <p class="lead">Informationen gemäß Art. 13 und 14 Datenschutz-Grundverordnung (DSGVO), Datenschutzgesetz (DSG) und § 165 Telekommunikationsgesetz 2021 (TKG 2021).</p>
+
+        <h2>1. Verantwortlicher</h2>
+        <div class="card">
+          <address>
+            Andreas Herzinger<br />
+            Obere Platte 5<br />
+            6604 Höfen, Österreich<br />
+            E-Mail: <a href="mailto:andreas.herzinger02@gmail.com">andreas.herzinger02@gmail.com</a>
+          </address>
+        </div>
+        <p>Ein Datenschutzbeauftragter ist nicht bestellt, da die gesetzlichen Voraussetzungen hierfür nicht vorliegen.</p>
+
+        <h2>2. Das Wichtigste in Kürze</h2>
+        <ul>
+          <li>Diese Website ist eine reine Informationsseite. Es gibt keine Benutzerkonten, keine Kontaktformulare, keinen Newsletter und keinen Shop.</li>
+          <li>Es werden <strong>keine Cookies</strong> gesetzt und <strong>keine Analyse- oder Tracking-Dienste</strong> (z. B. Google Analytics) eingesetzt.</li>
+          <li>Schriften, Icons und Skripte werden lokal von dieser Website geladen. Beim Aufruf der Seite werden keine Verbindungen zu Google Fonts oder anderen Drittanbietern aufgebaut.</li>
+          <li>Personenbezogene Daten fallen nur in den Server-Logs des Hosting-Anbieters (Abschnitt 3) und bei einer Kontaktaufnahme per E-Mail (Abschnitt 5) an.</li>
+        </ul>
+
+        <h2>3. Hosting und Server-Logs (GitHub Pages)</h2>
+        <p>Diese Website wird über den Dienst <strong>GitHub Pages</strong> der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (eine Tochtergesellschaft der Microsoft Corporation) bereitgestellt. Beim Aufruf der Website übermittelt Ihr Browser technisch bedingt Daten an die Server von GitHub. GitHub protokolliert und speichert dabei die IP-Adresse der Besucherinnen und Besucher zu Sicherheitszwecken; typischerweise werden außerdem Datum und Uhrzeit des Zugriffs, die aufgerufene Adresse, der Browsertyp (User Agent) und die zuvor besuchte Seite (Referrer) verarbeitet.</p>
+        <p><strong>Zweck und Rechtsgrundlage:</strong> Die Verarbeitung dient der Auslieferung der Website sowie der Sicherheit und Stabilität des Systems. Rechtsgrundlage ist mein berechtigtes Interesse an einem sicheren und effizienten Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO). Ich selbst habe keinen Zugriff auf diese Server-Logs.</p>
+        <p><strong>Drittlandübermittlung:</strong> GitHub, Inc. hat sich nach dem EU-U.S. Data Privacy Framework (DPF) zertifiziert, sodass für die Übermittlung in die USA ein Angemessenheitsbeschluss der Europäischen Kommission gemäß Art. 45 DSGVO besteht. Ergänzend stützt sich GitHub auf die EU-Standardvertragsklauseln. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Datenschutzerklärung</a> und <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages – Data collection</a>.</p>
+
+        <h2>4. Cookies und lokale Speicherung</h2>
+        <p>Diese Website verwendet keine Cookies. Ihre Sprachwahl (Deutsch/Englisch) wird ausschließlich im lokalen Speicher Ihres Browsers (<em>localStorage</em>, Eintrag <code>language</code>) abgelegt, damit die gewählte Sprache beim nächsten Besuch erhalten bleibt. Diese Information verlässt Ihr Gerät nicht, wird nicht an mich oder Dritte übertragen und enthält keine personenbezogenen Daten. Die Speicherung ist für die von Ihnen ausdrücklich gewünschte Funktion unbedingt erforderlich und bedarf daher keiner Einwilligung (§ 165 Abs. 3 TKG 2021). Sie können den Eintrag jederzeit über die Einstellungen Ihres Browsers löschen.</p>
+
+        <h2>5. Kontaktaufnahme per E-Mail</h2>
+        <p>Wenn Sie mir per E-Mail schreiben, verarbeite ich Ihre E-Mail-Adresse, Ihren Namen (sofern angegeben) und den Inhalt Ihrer Nachricht, um Ihre Anfrage zu beantworten und gegebenenfalls ein Projekt vorzubereiten oder abzuwickeln.</p>
+        <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertrag bzw. vorvertragliche Maßnahmen) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).</p>
+        <p><strong>Speicherdauer:</strong> Anfragen werden gelöscht, sobald sie abschließend bearbeitet sind und keine gesetzlichen Aufbewahrungspflichten (insbesondere die siebenjährige Frist nach § 132 Bundesabgabenordnung für geschäftliche Korrespondenz) entgegenstehen.</p>
+        <p><strong>E-Mail-Anbieter:</strong> Für den E-Mail-Verkehr nutze ich den Dienst Gmail der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dabei kann es zu einer Übermittlung an die Google LLC in den USA kommen; Google LLC ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Für vertrauliche Inhalte empfehle ich, vorab einen verschlüsselten Kommunikationsweg zu vereinbaren.</p>
+
+        <h2>6. Externe Links</h2>
+        <p>Diese Website verlinkt auf externe Angebote wie GitHub, LinkedIn, Google Scholar, Odeq und ChangeMy.AI. Es werden keine Inhalte dieser Anbieter eingebettet; eine Datenübertragung findet erst statt, wenn Sie einen Link aktiv anklicken. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+
+        <h2>7. Ihre Rechte</h2>
+        <p>Ihnen stehen gegenüber mir als Verantwortlichem folgende Rechte zu: Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen Verarbeitungen, die auf Art. 6 Abs. 1 lit. f DSGVO beruhen (Art. 21). Zur Ausübung Ihrer Rechte genügt eine E-Mail an <a href="mailto:andreas.herzinger02@gmail.com">andreas.herzinger02@gmail.com</a>.</p>
+        <p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, haben Sie das Recht auf Beschwerde bei der Aufsichtsbehörde. In Österreich ist dies die</p>
+        <div class="card">
+          <address>
+            Österreichische Datenschutzbehörde<br />
+            Barichgasse 40–42, 1030 Wien<br />
+            Telefon: +43 1 52 152-0<br />
+            E-Mail: <a href="mailto:dsb@dsb.gv.at">dsb@dsb.gv.at</a><br />
+            <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>
+          </address>
+        </div>
+
+        <h2>8. Keine automatisierte Entscheidungsfindung</h2>
+        <p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne des Art. 22 DSGVO statt.</p>
+
+        <h2>9. Änderungen</h2>
+        <p>Ich passe diese Datenschutzerklärung an, wenn sich die Website oder die Rechtslage ändert. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+
+        <p class="stand">Stand: 28. Oktober 2026</p>
+      </article>
+      <article class="lang-en" lang="en">
+
+        <h1>Privacy Policy</h1>
+        <p class="lead">Information under Articles 13 and 14 of the General Data Protection Regulation (GDPR), the Austrian Data Protection Act (DSG) and Section 165 of the Austrian Telecommunications Act 2021 (TKG 2021).</p>
+
+        <h2>1. Controller</h2>
+        <div class="card">
+          <address>
+            Andreas Herzinger<br />
+            Obere Platte 5<br />
+            6604 Höfen, Austria<br />
+            E-mail: <a href="mailto:andreas.herzinger02@gmail.com">andreas.herzinger02@gmail.com</a>
+          </address>
+        </div>
+        <p>No data protection officer has been appointed, as the statutory requirements for one are not met.</p>
+
+        <h2>2. In short</h2>
+        <ul>
+          <li>This website is purely informational. There are no user accounts, contact forms, newsletters or shop.</li>
+          <li>It sets <strong>no cookies</strong> and uses <strong>no analytics or tracking services</strong> (such as Google Analytics).</li>
+          <li>Fonts, icons and scripts are served locally from this website. Visiting the site does not open any connection to Google Fonts or other third parties.</li>
+          <li>Personal data arise only in the server logs of the hosting provider (section 3) and when you contact me by e-mail (section 5).</li>
+        </ul>
+
+        <h2>3. Hosting and server logs (GitHub Pages)</h2>
+        <p>This website is hosted with <strong>GitHub Pages</strong>, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (a subsidiary of Microsoft Corporation). When you visit the site, your browser necessarily transmits data to GitHub's servers. GitHub logs and stores the visitor's IP address for security purposes; typically the date and time of access, the requested URL, the browser type (user agent) and the referring page are processed as well.</p>
+        <p><strong>Purpose and legal basis:</strong> The processing serves to deliver the website and to keep the system secure and stable. The legal basis is my legitimate interest in operating the website securely and efficiently (Art. 6(1)(f) GDPR). I have no access to these server logs myself.</p>
+        <p><strong>Transfer to a third country:</strong> GitHub, Inc. is certified under the EU-U.S. Data Privacy Framework (DPF), so the transfer to the USA is covered by an adequacy decision of the European Commission under Art. 45 GDPR. GitHub additionally relies on the EU standard contractual clauses. Further information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub General Privacy Statement</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages – Data collection</a>.</p>
+
+        <h2>4. Cookies and local storage</h2>
+        <p>This website does not use cookies. Your language choice (German/English) is stored only in your browser's local storage (<em>localStorage</em>, key <code>language</code>) so that the chosen language is kept on your next visit. This information never leaves your device, is not transmitted to me or to third parties and contains no personal data. Storing it is strictly necessary for the function you explicitly requested and therefore requires no consent (Section 165(3) TKG 2021). You can delete the entry at any time via your browser settings.</p>
+
+        <h2>5. Contact by e-mail</h2>
+        <p>If you write to me by e-mail, I process your e-mail address, your name (if given) and the content of your message in order to answer your enquiry and, where applicable, to prepare or carry out a project.</p>
+        <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (contract or pre-contractual steps) and Art. 6(1)(f) GDPR (legitimate interest in handling enquiries).</p>
+        <p><strong>Retention:</strong> Enquiries are deleted once they have been fully dealt with, unless statutory retention obligations apply (in particular the seven-year period under Section 132 of the Austrian Federal Fiscal Code for business correspondence).</p>
+        <p><strong>E-mail provider:</strong> I use Gmail, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Data may be transferred to Google LLC in the USA; Google LLC is certified under the EU-U.S. Data Privacy Framework. For confidential content I recommend agreeing an encrypted channel first.</p>
+
+        <h2>6. External links</h2>
+        <p>This website links to external services such as GitHub, LinkedIn, Google Scholar, Odeq and ChangeMy.AI. No content from these providers is embedded; data is transmitted only once you actively click a link. From that point on, the privacy policy of the respective provider applies.</p>
+
+        <h2>7. Your rights</h2>
+        <p>You have the following rights towards me as controller: access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection to processing based on Art. 6(1)(f) GDPR (Art. 21). To exercise your rights, an e-mail to <a href="mailto:andreas.herzinger02@gmail.com">andreas.herzinger02@gmail.com</a> is sufficient.</p>
+        <p>If you believe that the processing of your data infringes data protection law, you have the right to lodge a complaint with the supervisory authority. In Austria this is the</p>
+        <div class="card">
+          <address>
+            Österreichische Datenschutzbehörde (Austrian Data Protection Authority)<br />
+            Barichgasse 40–42, 1030 Vienna<br />
+            Phone: +43 1 52 152-0<br />
+            E-mail: <a href="mailto:dsb@dsb.gv.at">dsb@dsb.gv.at</a><br />
+            <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>
+          </address>
+        </div>
+
+        <h2>8. No automated decision-making</h2>
+        <p>There is no automated decision-making, including profiling, within the meaning of Art. 22 GDPR.</p>
+
+        <h2>9. Changes</h2>
+        <p>I will update this privacy policy when the website or the legal situation changes. The version published here applies.</p>
+
+        <p class="stand">Last updated: 28 October 2026</p>
+      </article>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-4 pb-10 pt-8 border-t border-brand-gray text-brand-muted text-sm flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
+      <p>© 2026 Andreas Herzinger</p>
+      <nav class="flex gap-6" aria-label="Rechtliches">
+        <a class="hover:text-brand-cyan transition-colors underline-offset-4 hover:underline" href="impressum.html"><span class="lang-de">Impressum</span><span class="lang-en">Legal Notice</span></a>
+        <a class="hover:text-brand-cyan transition-colors underline-offset-4 hover:underline" href="datenschutz.html"><span class="lang-de">Datenschutz</span><span class="lang-en">Privacy</span></a>
+      </nav>
+    </footer>
+
+    <script type="module">
+      import { initLanguage, toggleLanguage } from "./src/scripts/language.js";
+      window.toggleLanguage = toggleLanguage;
+      initLanguage();
+    </script>
+  </body>
+</html>

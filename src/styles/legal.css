@@ -1,0 +1,21 @@
+/* Legal pages (impressum.html, datenschutz.html) */
+.legal { max-width: 46rem; margin: 0 auto; padding: 7rem 1.25rem 4rem; }
+.legal h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem; color: var(--color-text-main); }
+.legal .lead { color: var(--color-text-muted); margin-bottom: 2.5rem; }
+.legal h2 { font-size: 1.25rem; font-weight: 700; margin: 2.5rem 0 0.75rem; color: var(--color-accent-primary); }
+.legal h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+.legal p, .legal li, .legal dd, .legal dt { line-height: 1.65; }
+.legal p { margin: 0 0 1rem; }
+.legal ul { list-style: disc; padding-left: 1.5rem; margin: 0 0 1rem; }
+.legal li { margin-bottom: 0.35rem; }
+.legal a { color: var(--color-accent-primary); text-decoration: underline; text-underline-offset: 3px; }
+.legal a:hover { color: var(--color-accent-secondary); }
+.legal dl { display: grid; grid-template-columns: minmax(10rem, 14rem) 1fr; gap: 0.4rem 1.25rem; margin: 0 0 1rem; }
+.legal dt { color: var(--color-text-muted); }
+.legal dd { margin: 0; }
+@media (max-width: 560px) { .legal dl { grid-template-columns: 1fr; gap: 0.15rem; } .legal dd { margin-bottom: 0.6rem; } }
+.legal address { font-style: normal; }
+.legal .card { background: var(--color-bg-panel); border: 1px solid var(--color-border); border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin: 0 0 1.5rem; }
+.legal .stand { margin-top: 3rem; color: var(--color-text-muted); font-size: 0.875rem; }
+/* Placeholders that must be replaced before deployment */
+.todo { background: #fde047; color: #111; padding: 0 0.3em; border-radius: 0.2em; font-weight: 600; }
