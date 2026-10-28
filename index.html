@@ -5,16 +5,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>herzinger-ai | AI Solutions &amp; Engineering</title>
 
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=JetBrains+Mono:wght@400;700&amp;family=Archivo:wght@600&amp;display=swap"
-      rel="stylesheet"
-    />
+    <!-- Dependencies: self-hosted (no third-party requests; see datenschutz.html) -->
+    <script src="src/vendor/tailwind-3.4.17.js"></script>
+    <link rel="stylesheet" href="src/styles/fonts.css" />
 
     <!-- Tailwind Config -->
     <script>
@@ -1623,7 +1616,7 @@
               <img
                 alt="GitHub"
                 class="w-6 h-6 github-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                src="src/assets/github.svg"
               />
             </a>
             <a
@@ -1634,15 +1627,23 @@
               <img
                 alt="LinkedIn"
                 class="w-6 h-6"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                src="src/assets/linkedin.svg"
               />
             </a>
           </div>
         </div>
         <footer
-          class="mt-20 pt-8 border-t border-brand-gray text-brand-muted text-sm"
+          class="mt-20 pt-8 border-t border-brand-gray text-brand-muted text-sm flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6"
         >
           <p>© 2026 Andreas Herzinger</p>
+          <nav class="flex gap-6" aria-label="Rechtliches">
+            <a class="hover:text-brand-cyan transition-colors underline-offset-4 hover:underline" href="impressum.html">
+              <span class="lang-de">Impressum</span><span class="lang-en">Legal Notice</span>
+            </a>
+            <a class="hover:text-brand-cyan transition-colors underline-offset-4 hover:underline" href="datenschutz.html">
+              <span class="lang-de">Datenschutz</span><span class="lang-en">Privacy</span>
+            </a>
+          </nav>
         </footer>
       </div>
     </section>
