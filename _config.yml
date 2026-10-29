@@ -1,0 +1,11 @@
+# GitHub Pages (Jekyll) build settings.
+# Keep repo-internal files out of the published site (pentest 2026-10-29, rec. 10).
+exclude:
+  - README.md
+  - SETUP.md
+  - package.json
+  - package-lock.json
+  - vscode.code-profile
+  - node_modules
+  - docs
+  - .gitignore
